@@ -1,0 +1,292 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.cc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.contactus {
+  display: block;
+  width: 240px;
+  height: 34px;
+  background-color: #5BA0D0;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 10;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 34px;
+  text-decoration: none;
+  padding-left: 10px; }
+  .contactus span {
+    position: absolute;
+    font-size: 15px;
+    right: 10px; }
+
+nav {
+  position: fixed;
+  width: 80%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 3; }
+  nav > ul {
+    font-size: 0; }
+    nav > ul li {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 20%;
+      height: 96px;
+      background-color: #A1A194;
+      text-align: center;
+      font-size: 1rem; }
+      nav > ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        line-height: 96px;
+        font-size: 14px; }
+    nav > ul > li:hover {
+      background-color: #333; }
+      nav > ul > li:hover > .sub {
+        left: 0; }
+  nav li + li {
+    border: 0px solid #333;
+    border-left-width: 1px; }
+  nav .sub {
+    position: absolute;
+    width: 100%;
+    left: -100000px; }
+    nav .sub li {
+      display: block;
+      width: 100%;
+      border: 0;
+      height: 30px; }
+      nav .sub li a {
+        line-height: 30px; }
+    nav .sub a:hover {
+      color: #222;
+      transition: .4s; }
+
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  margin-top: -54px;
+  max-width: 80%; }
+
+.about {
+  background-color: #99C038; }
+
+.cover {
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+  top: 0;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Tudor_Sports_Ground.jpg) top/100% fixed;
+  /* background-size: 100%; */ }
+
+.quotes {
+  background-color: #464646;
+  width: 80%;
+  height: 0;
+  padding-top: 20%;
+  position: absolute;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  bottom: -10%;
+  margin: auto;
+  line-height: 100px;
+  color: #fff; }
+  .quotes h2 {
+    font-size: 4vw;
+    display: block;
+    width: 50%;
+    height: 50%;
+    line-height: 1.2; }
+  .quotes .dot {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 9px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #99C038;
+    z-index: 10; }
+
+.second {
+  position: relative;
+  height: 563px;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(http://garciarockandwaterdesign.com/blog/wp-content/uploads/2012/04/DSCF5947.jpg) top/100% fixed; }
+  .second .hireus {
+    width: 80%;
+    height: 250px; }
+    .second .hireus .text {
+      float: left;
+      width: 80%;
+      font-size: 3vw;
+      line-height: 1.3;
+      color: #AAA; }
+      .second .hireus .text h2 {
+        font-size: 5vw;
+        color: #99C038; }
+    .second .hireus a {
+      display: block;
+      width: 203px;
+      height: 203px;
+      background-color: #99C038;
+      border-radius: 100px;
+      float: left;
+      text-decoration: none;
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
+      position: relative; }
+      .second .hireus a .btn {
+        width: 103px;
+        height: 80px; }
+
+.clearfix {
+  clear: both; }
+
+.plans {
+  width: 80%;
+  padding: 10% 0px;
+  margin: auto; }
+
+.plan {
+  float: left;
+  width: 22%;
+  min-width: 180px;
+  margin: 100px 0;
+  height: 390px;
+  background-color: #F0F1F1;
+  position: relative; }
+  .plan + .plan {
+    margin-left: 4%; }
+  .plan img {
+    max-width: 80%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -85px;
+    border-radius: 85px;
+    position: absolute;
+    z-index: 1; }
+  .plan .title {
+    background-color: #A1A194;
+    height: 221px;
+    position: relative; }
+    .plan .title h2 {
+      width: 70%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      color: #fff;
+      font-size: 28px;
+      bottom: 20%;
+      position: absolute; }
+  .plan p {
+    margin: 40px 30px;
+    line-height: 1.3;
+    font-size: 14px;
+    color: #aaa; }
+  .plan .more {
+    position: absolute;
+    bottom: -60px;
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    background-color: #A1A194; }
+  .plan .more:hover {
+    transition: 0.2s;
+    background-color: #F0F1F1;
+    color: #aaa; }
+  .plan .drainage-plans {
+    background-color: #737877; }
+  .plan .garden-design {
+    background-color: #464646; }
+  .plan .planting-layout {
+    background-color: #99C038; }
+
+@media (min-width: 768px) {
+  .second .hireus .text {
+    width: 60%; }
+  .second .hireus a {
+    right: 0; } }
+@media (min-width: 992px) {
+  .second .hireus .text {
+    width: 70%; }
+  .second .hireus a {
+    right: 0; } }
+@media (max-width: 767px) {
+  .cover {
+    padding-top: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Tudor_Sports_Ground.jpg) center/cover no-repeat fixed; }
+
+  nav {
+    display: none; }
+
+  .plan {
+    width: 100%; }
+    .plan + .plan {
+      margin-left: 0px; }
+
+  .quotes {
+    width: 100%;
+    height: 30%;
+    bottom: -30%; }
+    .quotes h2 {
+      width: 70%;
+      font-size: 7vw; }
+
+  .second {
+    font-size: 2vw; } }
+
+/*# sourceMappingURL=style.css.map */
