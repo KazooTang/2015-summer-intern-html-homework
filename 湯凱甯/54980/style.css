@@ -1,0 +1,218 @@
+* {
+  list-style: none; }
+
+.a {
+  border: 1px solid royalblue; }
+
+.b {
+  border: 1px solid violet; }
+
+.c {
+  border: 1px solid orange; }
+
+.container {
+  padding-top: 3vh;
+  position: relative; }
+
+.nav a {
+  text-decoration: none;
+  color: #9C9EA0; }
+.nav a + a {
+  margin-left: 10px; }
+
+.nav-right {
+  width: 580px; }
+
+.search {
+  background-color: #F0F0F0;
+  border: 0px; }
+  .search i {
+    font-size: 25px;
+    color: #9C9EA0; }
+    .search i :hover {
+      color: #3498DB; }
+
+.search-box {
+  padding-left: 25px; }
+
+.form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.rounded {
+  height: 60px;
+  border-radius: 25px; }
+
+.lh {
+  line-height: 60px; }
+
+.dropdown-group {
+  font-size: 0px; }
+  .dropdown-group .dropdown {
+    display: inline-block; }
+    .dropdown-group .dropdown > a {
+      font-size: 1rem;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      background-color: #3B3F46;
+      padding-left: 20px;
+      color: #3498DB;
+      border-radius: 25px 0 0 25px; }
+    .dropdown-group .dropdown .dpd-2 {
+      border-left: 1px solid #9C9EA0;
+      border-radius: 0 25px 25px 0; }
+    .dropdown-group .dropdown ul {
+      background-color: #3B3F46; }
+      .dropdown-group .dropdown ul li a {
+        color: #fff;
+        font-size: 10px;
+        transition: 0.3s; }
+      .dropdown-group .dropdown ul li a:hover {
+        color: #9C9EA0; }
+
+.logobar {
+  margin: 30px 0; }
+
+.logo {
+  margin-left: -15px;
+  width: 100%;
+  max-width: 344px; }
+
+.tel {
+  font-size: 2em;
+  line-height: 3;
+  color: #9C9EA0; }
+  .tel i {
+    margin: 10px;
+    color: #3498DB; }
+
+.cart-group {
+  position: relative;
+  height: 60px;
+  margin: 10px 0; }
+  .cart-group .cart-icon {
+    background-color: #3498DB;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    color: #fff; }
+  .cart-group .cart-icon:hover + .cart {
+    background-color: #3B3F46; }
+  .cart-group .cart-position {
+    position: absolute;
+    left: 10px; }
+  .cart-group .cart {
+    background-color: #F0F0F0;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 70px;
+    text-decoration: none;
+    text-align: center;
+    color: #9C9EA0; }
+    .cart-group .cart .title {
+      color: #3B3F46; }
+  .cart-group ul {
+    margin-left: 40px;
+    padding: 5px 15px;
+    background-color: #F0F0F0; }
+
+.products ul {
+  padding: 0;
+  font-size: 0; }
+  .products ul li {
+    display: inline-block;
+    padding: 0; }
+    .products ul li a {
+      display: block;
+      font-size: 0.5vw;
+      background-color: #3B3F46;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none; }
+    .products ul li a:hover {
+      border-bottom: 5px solid #3498DB; }
+    .products ul li + li {
+      border-left: 1px solid #F0F0F0; }
+
+.caption-img {
+  width: 100%; }
+
+.categories {
+  height: 25vw;
+  background-color: #3B3F46; }
+  .categories .cat {
+    height: 20vw;
+    padding: 20px; }
+  .categories .outter {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 80%; }
+  .categories .tinted {
+    background: url(http://sparklingspur.com/wp-content/uploads/2011/08/beautiful-eye-blue-contact-lens.jpg) top/100%; }
+  .categories .accessories {
+    background: url(http://www.piercepioneer.com/wp-content/uploads/2015/06/contact-lens.jpg) top/100%; }
+  .categories .eyes-care {
+    background: url(https://edc2.healthtap.com/ht-staging/user_answer/reference_image/4583/large/contact_lens.jpeg?1386669452) bottom/100%; }
+  .categories .product-text {
+    width: 100%;
+    height: 0;
+    padding: 5% 20px 35% 20px;
+    background-color: #3498DB;
+    position: absolute;
+    bottom: 0;
+    font-size: 2.5vw;
+    line-height: 1;
+    color: #fff; }
+    .categories .product-text .product-name {
+      width: 90%;
+      float: left; }
+      .categories .product-text .product-name span {
+        font-size: 2vw;
+        color: #3B3F46; }
+    .categories .product-text i {
+      font-size: 50px;
+      line-height: 6vw;
+      position: absolute;
+      right: 15px; }
+
+.recommand {
+  height: 80vh;
+  background: linear-gradient(rgba(100, 120, 120, 0.6), rgba(100, 120, 120, 0.6)), url(http://vaughteyeassociates.com/clients/13366/images/iStock_000023383541Medium.jpg) top/100% fixed;
+  color: #fff; }
+  .recommand h2 {
+    font-size: 6vw;
+    text-align: center; }
+  .recommand h3 {
+    font-size: 1.2vw;
+    line-height: 1.5; }
+  .recommand .more-info {
+    display: block;
+    background-color: #3B3F46; }
+
+.full {
+  height: 400px; }
+  .full .oofd {
+    position: absolute; }
+    .full .oofd i {
+      font-size: 8vw;
+      position: absolute;
+      left: 0; }
+    .full .oofd h3 {
+      font-size: 50px; }
+    .full .oofd h4 {
+      font-size: 1.5vw; }
+  .full .contact-bg {
+    background-color: #3498DB; }
+
+.item {
+  margin: 0 20px; }
+
+/*# sourceMappingURL=style.css.map */

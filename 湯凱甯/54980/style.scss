@@ -1,0 +1,290 @@
+$dark-gray: #3B3F46; 
+$m-gray: #9C9EA0;
+$gray: #F0F0F0;
+$blue: #3498DB;
+
+* {
+  list-style: none;
+}
+
+.a {
+  border: 1px solid royalblue;
+}
+
+.b {
+  border: 1px solid violet;
+}
+
+.c {
+  border: 1px solid orange;
+}
+
+.container {
+  padding-top: 3vh;
+  position: relative;
+}
+
+.nav {
+  a {
+    text-decoration: none;
+    color: $m-gray;
+  }
+  a + a {
+    margin-left: 10px;
+  }
+}
+
+.nav-right {
+  width: 580px;
+}
+
+.search {
+  background-color: $gray;
+  border: 0px;
+  i {
+    font-size: 25px;
+    color: $m-gray;
+    :hover {
+      color: $blue;
+    }
+  }
+}
+
+.search-box {
+  padding-left: 25px;
+}
+
+.form-control:focus{
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.rounded {
+  height: 60px;
+  border-radius: 25px;
+}
+
+.lh {
+  line-height: 60px;
+}
+
+.dropdown-group {
+  font-size: 0px;
+  .dropdown {
+    display: inline-block;
+    > a {
+      font-size: 1rem;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      background-color: $dark-gray;
+      padding-left: 20px;
+      color: $blue;
+      border-radius: 25px 0 0 25px;
+    }
+    .dpd-2 {
+      border-left: 1px solid $m-gray;
+      border-radius: 0 25px 25px 0;
+    }
+    ul {
+      background-color: $dark-gray;
+      li {
+        a {
+          color: #fff;
+          font-size: 10px;
+          transition: 0.3s;
+        }
+        a:hover {
+          color: $m-gray;
+        }
+      }
+    }
+  }
+}
+
+.logobar {
+  margin: 30px 0;
+}
+
+.logo {
+  margin-left: -15px;
+  width: 100%;
+  max-width: 344px;
+}
+
+.tel {
+  font-size: 2em;
+  line-height: 3;
+  color: $m-gray;
+  i {
+    margin: 10px;
+    color: $blue;
+  }
+}
+
+.cart-group {
+  position: relative;
+  height: 60px;
+  margin: 10px 0;
+  .cart-icon {
+    background-color: $blue;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    color: #fff;
+  }
+
+  .cart-icon:hover + .cart {
+    background-color: $dark-gray;
+  }    
+
+  .cart-position {
+    position: absolute;
+    left: 10px;
+  }
+
+  .cart {
+    background-color: $gray;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 70px;
+    text-decoration: none;
+    text-align: center;
+    color: $m-gray;
+    .title {
+      color: $dark-gray;
+    }
+  }
+  ul {
+    margin-left: 40px;
+    padding: 5px 15px;
+    background-color: $gray;
+  }
+}
+
+.products {
+  ul {
+    padding: 0;
+    font-size: 0;
+    li {
+      display: inline-block;
+      padding: 0;
+      a {
+        display: block;
+        font-size: 0.5vw;
+        background-color: $dark-gray;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 5px solid $blue;
+      }
+      + li {
+        border-left: 1px solid $gray;
+      }
+    }
+  }
+}
+
+.caption-img {
+  width: 100%;
+}
+
+.categories {
+  height: 25vw;
+  background-color: $dark-gray;
+  .cat {
+    height: 20vw;
+    padding: 20px;
+  }
+  .outter {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 80%;
+  }
+  .tinted {
+    background: url(http://sparklingspur.com/wp-content/uploads/2011/08/beautiful-eye-blue-contact-lens.jpg) top/100%;
+  }
+  .accessories {
+    background: url(http://www.piercepioneer.com/wp-content/uploads/2015/06/contact-lens.jpg) top/100%;
+  }
+  .eyes-care {
+    background: url(https://edc2.healthtap.com/ht-staging/user_answer/reference_image/4583/large/contact_lens.jpeg?1386669452) bottom/100%;
+  }
+  .product-text {
+    width: 100%;
+    height: 0;
+    padding: 5% 20px 35% 20px;
+    background-color: $blue;
+    position: absolute;
+    bottom: 0;
+    font-size: 2.5vw;
+    line-height: 1;
+    color: #fff;
+    .product-name {
+      width: 90%;
+      float: left;
+      span {
+        font-size: 2vw;
+        color: $dark-gray;
+      }
+    }
+    i {
+      font-size: 50px;
+      line-height: 6vw;
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+
+.recommand {
+  height: 80vh;
+  background: linear-gradient(rgba(100, 120, 120, 0.6), rgba(100, 120, 120, 0.6)), url(http://vaughteyeassociates.com/clients/13366/images/iStock_000023383541Medium.jpg) top/100% fixed;
+  color: #fff;
+  h2 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.2vw;
+    line-height: 1.5;
+  }
+  .more-info {
+    display: block;
+    background-color: $dark-gray;
+  }
+}
+
+.full {
+  height: 400px;
+  .oofd {
+    position: absolute;
+    i {
+      font-size: 8vw;
+      position: absolute;
+      left: 0;
+    }
+    h3 {
+      font-size: 50px;
+    }
+    h4 {
+      font-size: 1.5vw;
+    }
+  }
+  .contact-bg {
+    background-color: $blue;
+  }
+}
+
+.item {
+  margin: 0 20px;
+}
