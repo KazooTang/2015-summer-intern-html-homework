@@ -3,8 +3,9 @@ $m-gray: #9C9EA0;
 $gray: #F0F0F0;
 $blue: #3498DB;
 
-* {
+body {
   list-style: none;
+  font-family: sans-serif;
 }
 
 .a {
@@ -137,16 +138,10 @@ $blue: #3498DB;
     line-height: 60px;
     color: #fff;
   }
-
-  .cart-icon:hover + .cart {
-    background-color: $dark-gray;
-  }    
-
   .cart-position {
     position: absolute;
     left: 10px;
   }
-
   .cart {
     background-color: $gray;
     height: 60px;
@@ -165,6 +160,24 @@ $blue: #3498DB;
     background-color: $gray;
   }
 }
+
+.dropdown-toggle:hover > .cart {
+  transition: 0.5s;
+  background-color: $dark-gray;
+  color: #fff;
+  span {
+    color: #fff;
+  }
+  + .cart-icon {
+    border-radius: 25px 0 0 25px;
+  }
+}    
+
+.carousel-text {
+  border: none;
+  font-size: 10vw;
+}
+
 
 .products {
   ul {
@@ -198,31 +211,37 @@ $blue: #3498DB;
 }
 
 .categories {
-  height: 25vw;
+  font-family: "Open Sans", sans-serif;
+  height: auto;
   background-color: $dark-gray;
-  .cat {
-    height: 20vw;
-    padding: 20px;
-  }
   .outter {
     position: relative;
-    width: 100%;
     height: 0;
     padding-top: 80%;
+    margin-bottom: 8%;
   }
   .tinted {
     background: url(http://sparklingspur.com/wp-content/uploads/2011/08/beautiful-eye-blue-contact-lens.jpg) top/100%;
+    > .tinted {
+      background: $blue;
+    }
   }
   .accessories {
-    background: url(http://www.piercepioneer.com/wp-content/uploads/2015/06/contact-lens.jpg) top/100%;
+    background: url(https://edc2.healthtap.com/ht-staging/user_answer/reference_image/4583/large/contact_lens.jpeg?1386669452) bottom/100%;
+    > .accessories {
+      background: #E74C3C; 
+    }
   }
   .eyes-care {
-    background: url(https://edc2.healthtap.com/ht-staging/user_answer/reference_image/4583/large/contact_lens.jpeg?1386669452) bottom/100%;
+    background: url(http://www.piercepioneer.com/wp-content/uploads/2015/06/contact-lens.jpg) top/100%;
+    > .eyes-care {
+      background: #96CA2D;
+    }
   }
   .product-text {
     width: 100%;
     height: 0;
-    padding: 5% 20px 35% 20px;
+    padding: 5% 20px 30% 20px;
     background-color: $blue;
     position: absolute;
     bottom: 0;
@@ -233,7 +252,7 @@ $blue: #3498DB;
       width: 90%;
       float: left;
       span {
-        font-size: 2vw;
+        font-size: 1.5vw;
         color: $dark-gray;
       }
     }
@@ -250,41 +269,116 @@ $blue: #3498DB;
   height: 80vh;
   background: linear-gradient(rgba(100, 120, 120, 0.6), rgba(100, 120, 120, 0.6)), url(http://vaughteyeassociates.com/clients/13366/images/iStock_000023383541Medium.jpg) top/100% fixed;
   color: #fff;
+  .recommanded {
+    float: none;
+  }
   h2 {
+    font-family: "Open Sans", sans-serif;
     font-size: 6vw;
     text-align: center;
+    margin: 8% 0 3% 0;
   }
   h3 {
     font-size: 1.2vw;
     line-height: 1.5;
+    color: $gray;
+    margin-bottom: 5%;
   }
   .more-info {
     display: block;
     background-color: $dark-gray;
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+    position: relative;
+    p {
+      padding-left: 10px;
+    }
+    .info-icon {
+      background-color: $blue;
+      position: absolute;
+      right: -1px;
+      top: 0;
+      width: 60px;
+      text-align: center;
+      i {
+        font-size: 25px;
+      }
+    }
   }
 }
 
-.full {
-  height: 400px;
-  .oofd {
+.oofd {
+  font-family: "Open Sans", sans-serif;
+  margin: 8vw 0;
+  color: #fff;
+  position: relative;
+  i {
+    font-size: 8vw;
     position: absolute;
-    i {
-      font-size: 8vw;
-      position: absolute;
-      left: 0;
-    }
-    h3 {
-      font-size: 50px;
-    }
-    h4 {
-      font-size: 1.5vw;
-    }
+    left: 0;
+    bottom: 15px;
   }
-  .contact-bg {
-    background-color: $blue;
+  h3 {
+    margin: 0;
+    font-size: 50px;
   }
+  h4 {
+    font-size: 1.5vw;
+  }
+}
+
+.contact-bg {
+  background-color: $blue;
+}
+.delivery-bg {
+  background-color: $dark-gray;
+}
+
+.rotate {
+  -webkit-transform: rotate(314deg);
+  -moz-transform: rotate(314deg);
+  -o-transform: rotate(314deg);
+  writing-mode: lr-tb;
 }
 
 .item {
-  margin: 0 20px;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  .item-img {
+    position: relative;
+    display: block;
+    background-color: $gray;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    /* height: 250px; */
+    overflow: hidden;
+    .bg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .sale-angle {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: -20px;
+      top: 0;
+      border: 60px solid $m-gray;
+      border-color: $m-gray transparent transparent transparent;
+      border-left: 0;
+      .sale {
+        position: absolute;
+        color: $gray;
+        top: -48px;
+        left: 28px;
+      }
+    }
+  }
 }
